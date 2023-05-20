@@ -5,7 +5,7 @@ import { fetchGreetings } from '../store/greetingsSlice';
 function Greetings() {
   const dispatch = useDispatch();
   const greetingsData = useSelector((state) => state.greetings.greetings);
-  const singleGreeting = greetingsData[Math.floor(Math.random() * greetingsData.length)];
+
 
   useEffect(() => {
     dispatch(fetchGreetings());
@@ -13,7 +13,7 @@ function Greetings() {
 
   return (
     <div className="center">
-      {singleGreeting && <h2>{singleGreeting.greeting}</h2>}
+      {greetingsData && <h2>{greetingsData.greeting}</h2>}
       <button onClick={() => dispatch(fetchGreetings())} className="greeting-btn" type="button">
         Get Greeting
       </button>
