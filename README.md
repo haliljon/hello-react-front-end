@@ -81,7 +81,7 @@ In order to run this project you need:
 
 ### Front-end
 
-Here is the (Back-end)[https://github.com/haliljon/hello-rails-back-end.git] of the app.
+Here is the [Back-end](https://github.com/haliljon/hello-rails-back-end.git) of the app.
 
 ### Setup
 
